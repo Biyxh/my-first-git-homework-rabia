@@ -1,10 +1,11 @@
-def display_balance():
-    print("Your A/C balance is £{}".format(opening_balance))
+import unittest
+import ATM_machine_homework
 
 
-def cash_withdraw(withdrawal_amount):
-    global opening_balance
+class TestCalc(unittest.TestCase):
+    def test_subtraction(self):
+        result = ATM_machine_homework.subtraction(100 - 20)
+        self.assertEqual(result, 80)
+        if __name__ == '__main__':
+            unittest.main()
 
-    print("Your A/C balance is £{}".format(opening_balance))
-    opening_balance = opening_balance - withdrawal_amount
-    print("Your current A/C balance is £{}")
