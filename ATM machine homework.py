@@ -35,3 +35,10 @@ while Trials != 0:
             x = 100
             if x > 100:
                 raise Exception("Sorry no transactions above £100")
+
+            UserExit = input("Would  You Like to Continue? Y/N: ")
+            if UserExit == "N":
+                print("Thank you for using Python Bank")
+                break
+            else:
+                continue
