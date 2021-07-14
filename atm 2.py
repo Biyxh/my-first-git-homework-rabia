@@ -8,3 +8,4 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(result, 80)
         if __name__ == '__main__':
             unittest.main()
+
